@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Agenda</title>
+    <link href="https://fonts.googleapis.com/css?family=Arimo|IBM+Plex+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="agenda">
+    <body background=assets/images/travel-hacks-opener-TRAVELHACK0717.jpg></body>
+    <div class="container">
+        <div class="row top">
+            <div class="col-md-6">
+                <p class="nameInAgenda">
+                    <span id="name-display"></span> <span id="city-display"></span> agenda
+                </p>
+            </div>
+
+            <div class="col-md-6">
+                <p class="nameInAgenda">
+                    Dates of Trip:<span id="departing-display"></span> to <span id="returning-display"></span>
+                </p>
+            </div>
+        </div>
+        <div class="row delay">
+            <div class="col-md-12 text-center">
+                <marquee><p id="airport"></p></marquee>
+            </div>
+        </div>
+<!-- day one -->        
+        <div class="row days">
+            <div class="col-md-4">
+                <p class="date">Day 1
+                    <span="firstDay"></span>
+                </p>
+            </div>
+            <div class="col-md-4"></div>
+            <div class="col-md-1">
+                <img class="weatherPhoto" id="weatherPhoto0" src=assets/images/weatherIcons/cloud.png></img>
+            </div>
+            <div class="col-md-3">
+                <p class="weather"><span id="weather0">
+            </span></p>
+            </div>
+        </div>
+        <div class="row days">
+            <p class="currentAgenda">Today's Agenda:</p>
+            <ul>
+                <li> <span id=dayOneList></span></li>
+            </ul>
+        </div>
+        <div class="row days">
+            <form>
+                <input type="text" id="dayOneInput">
+        </div>
+        <div class="row days">
+            <div class="col-md-8"></div>
+            <div class="col-md-4">
+                <button type="button" class="btn btn-primary btn-sm btn-info dayOneButton">Add to Agenda</button>
+                </form>
+            </div>
+        </div>
+
+<!-- day two -->        
+        <div class="row break"></div>
+        <div class="row days">
+            <div class="col-md-4">
+                <p class="date">Day 2
+                    <span="secondDay"></span>
+                </p>
+            </div>
+            <div class="col-md-4"></div>
+            <div class="col-md-1">
+                <img class="weatherPhoto" id="weatherPhoto1" src=assets/images/weatherIcons/sun.png></img>
+            </div>
+            <div class="col-md-3">
+                <p class="weather"><span id="weather1">
+            </span></p>
+            </div>
+        </div>
+        <div class="row days">
+            <p class="currentAgenda">Today's Agenda:</p>
+            <span id="dayTwoList"></span>
+        </div>
+        <div class="row days">
+            <form class="dayTwo">
+                <input type="text" id="dayTwoInput">
+            </form>
+        </div>
+        <div class="row days">
+            <div class="col-md-8"></div>
+            <div class="col-md-4">
+                <button type="button" class="btn btn-primary btn-sm btn-info dayTwoButton">Add to Agenda</button>
+            </div>
+        </div>
+<!--day three-->   
+        <div class="row break"></div>
+        <div class="row days">
+            <div class="col-md-4">
+                <p class="date">Day 3
+                    <span="secondDay"></span>
+                </p>
+            </div>
+            <div class="col-md-4"></div>
+            <div class="col-md-1">
+                <img class="weatherPhoto" id="weatherPhoto2" src=assets/images/weatherIcons/sun.png></img>
+            </div>
+            <div class="col-md-3">
+                <p class="weather"><span id="weather2">
+            </span></p>
+            </div>
+        </div>
+        <div class="row days">
+            <p class="currentAgenda">Today's Agenda:</p>
+            <span id="dayThreeList"></span>
+        </div>
+        <div class="row days">
+            <form>
+                <input type="text" id="dayThreeInput">
+            </form>
+        </div>
+        <div class="row days">
+            <div class="col-md-8"></div>
+            <div class="col-md-4">
+                <button type="button" class="btn btn-primary btn-sm btn-info dayThreeButton">Add to Agenda</button>
+            </div>
+        </div>     
+<!--Day Four-->
+        <div class="row break"></div>
+        <div class="row days">
+            <div class="col-md-4">
+                <p class="date">Day 4
+                    <span="secondDay"></span>
+                </p>
+            </div>
+            <div class="col-md-4"></div>
+            <div class="col-md-1">
+                <img class="weatherPhoto" id="weatherPhoto3" src=assets/images/weatherIcons/snowflake.png></img>
+            </div>
+            <div class="col-md-3">
+                <p class="weather"><span id="weather3">
+            </span></p>
+            </div>
+        </div>
+        <div class="row days">
+            <p class="currentAgenda">Today's Agenda:</p>
+            <span id="dayFourList"></span>
+        </div>
+        <div class="row days">
+            <form>
+                <input type="text" id="dayFourInput">
+            </form>
+        </div>
+        <div class="row days">
+            <div class="col-md-8"></div>
+            <div class="col-md-4">
+                <button type="button" class="btn btn-primary btn-sm btn-info dayFourButton">Add to Agenda</button>
+            </div>
+        </div>    
+<!--Day Five-->
+        <div class="row break"></div>
+        <div class="row days">
+            <div class="col-md-4">
+                <p class="date">Day 5
+                    <span="secondDay"></span>
+                </p>
+            </div>
+            <div class="col-md-4"></div>
+            <div class="col-md-1">
+                <img class="weatherPhoto" id="weatherPhoto4" src=assets/images/weatherIcons/rain.png></img>
+            </div>
+            <div class="col-md-3">
+                <p class="weather"><span id="weather4">
+            </span></p>
+            </div>
+        </div>
+        <div class="row days">
+            <p class="currentAgenda">Today's Agenda:</p>
+            <span id="dayFiveList"></span>
+        </div>
+        <div class="row days">
+            <form>
+                <input type="text" id="dayFiveInput">
+            </form>
+        </div>
+        <div class="row days">
+            <div class="col-md-8"></div>
+            <div class="col-md-4">
+                <button type="button" class="btn btn-primary btn-sm btn-info dayFiveButton">Add to Agenda</button>
+            </div>
+        </div>    
+
+
+    </div>
+    </div>
+
+        
+            
+            
+    </body>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+    <script src="assets/javascript/api.js"></script>
+    <script src="assets/javascript/app.js"></script>
+    <script src="assets/javascript/function.js"></script>
+</body>
+
+</html>
